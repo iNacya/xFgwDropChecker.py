@@ -11,16 +11,9 @@ import threading
 import time
 
 
-
-# Your most recent version
 pVersion = '1.1.0'
-# Your plugin hosted in "raw"/direct link mode
-pUrl = 'https://YourDirectLinkToThePluginHere/PluginName.py'
-# YourPluginName.py (Totally optional)
-#  It's only considered if you wanna get your plugin correctly identified by the user
+pUrl = 'https://raw.githubusercontent.com/iNacya/xFgwDropChecker.py/main/xFgwDropChecker.py'
 pName = 'xFgwDropChecker'
-
-
 
 # ______________________________ ' Initializing ' ______________________________ #
 
