@@ -15,6 +15,8 @@ pVersion = '1.1.1'
 pUrl = 'https://raw.githubusercontent.com/iNacya/xFgwDropChecker.py/main/xFgwDropChecker.py'
 pName = 'xFgwDropChecker'
 
+pNameV = '0.0.1'
+
 # ______________________________ ' Initializing ' ______________________________ #
 
 # Graphic user interface 
