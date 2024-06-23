@@ -10,12 +10,9 @@ from threading import *
 import threading
 import time
 
-
-pVersion = '1.1.1'
+pVersion = '1.1.0'
 pUrl = 'https://raw.githubusercontent.com/iNacya/xFgwDropChecker.py/main/xFgwDropChecker.py'
 pName = 'xFgwDropChecker'
-
-pNameV = '0.0.1'
 
 # ______________________________ ' Initializing ' ______________________________ #
 
@@ -267,27 +264,22 @@ def RareItemAlert():
 
 def send_message_discord(name):
 	nickname = get_character_data()['name']
-	# Mesajın JSON verisi olarak hazırlanması
 	Notice = f"The Rare item, [ {name} ] is dropped by [ {nickname} ] ."
 	data = {
         "content": Notice,
         "username": "xFgwDropChecker: "
     }
 
-    # HTTP başlıkları
 	headers = {
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
     }
 
-    # JSON verisinin UTF-8 formatına encode edilmesi
 	json_data = json.dumps(data).encode('utf-8')
     
-    # İstek gönderme
 	req = urllib.request.Request(WEBHOOK_URL, data=json_data, headers=headers)
     
 	try:
-		# İstek gönderme
 		with urllib.request.urlopen(req) as response:
 			pass
 	except Exception as e:
