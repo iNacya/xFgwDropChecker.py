@@ -11,7 +11,7 @@ import threading
 import time
 
 
-pVersion = '1.1.0'
+pVersion = '1.1.1'
 pUrl = 'https://raw.githubusercontent.com/iNacya/xFgwDropChecker.py/main/xFgwDropChecker.py'
 pName = 'xFgwDropChecker'
 
